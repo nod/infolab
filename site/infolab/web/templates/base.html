@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Infolab: Web & Distributed Information Management | Texas A&M University
+{% block title %}{% endblock %}</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="/static/global.css"/>
+</head>
+<body>
+
+
+
+
+
+<div id="container">
+	<div id="headerContainer">
+	<div id="headerMain"><h1><a href="/">Infolab: Web & Distributed Information Management</a></h1></div>
+	<div id="headerright">
+		<h1><a href="http://tamu.edu/">Texas A&M University</a></h1>
+        </div>
+	</div>
+ 
+<!-- start nav -->
+	<span class="preload1"></span>
+	<span class="preload2"></span>
+ 	<ul id="nav">
+		<li class="top"><a href="/" class="top_link"><span>HOME</span></a></li>
+		<li class="top"><a href="/people" class="top_link"><span>PEOPLE</span></a></li>
+		<li class="top"><a href="/projects" class="top_link"><span>PROJECTS</span></a></li>
+		<li class="top"><a href="/pubs" class="top_link"><span>PUBLICATIONS</span></a></li>
+		<li class="top"><a href="/resources" class="top_link"><span>RESOURCES</span></a></li>
+	</ul>
+<!-- end nav -->
+<!--- start content -->
+	<div id="contentWrapper">
+		<div id="content">
+{% block content %}{% endblock %}
+
+		</div>
+		<div class="push">{% block side-content %}{% endblock %}</div>
+	</div>
+</div>
+	<div id="footer">
+		<div id="footerInner">
+		Footer content
+		</div>
+
+        </div>
+</body>
+</html>
